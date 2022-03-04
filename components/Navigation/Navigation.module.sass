@@ -1,0 +1,52 @@
+@import '../../styles/variables'
+
+.nav
+  padding-top: 0.3rem
+  background: white
+  position: fixed
+  z-index: 100
+  width: 100%
+  display: flex
+  justify-content: center
+
+.links
+  padding: 1vw
+  padding-bottom: 0.5rem 
+  display: flex
+  justify-content: center
+  gap: 7vw
+  border-bottom: .3rem solid $lightGrey
+  width: 90%
+   
+
+.link
+  white-space: nowrap
+  text-decoration: none
+  transition: border 0.3s ease-out
+
+//bottom animation on hover  
+.link:after
+  content: ''
+  display: block
+  height: 1px
+  width: 0px
+  background: transparent
+  transition: width 0.5s ease, background 0.5s ease, opacity 0.5s ease
+
+.link:hover:after 
+  width: 100%
+  background: $black
+
+.active
+  opacity: 0.5
+  transition: opacity 0.5s ease
+.active:after
+  opacity: 0.5
+
+
+@media (min-width: 420px)
+  .link
+    font-size: 1.4rem
+  .links
+    width: 80%
+    padding: 1rem

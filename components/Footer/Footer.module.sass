@@ -1,0 +1,26 @@
+@import '../../styles/_variables'
+
+
+.footer
+  background: $black
+  height: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 1.5rem
+
+.footer div a
+  display: flex
+
+.footer div a span
+  transition: transform 0.2s ease-out
+  
+.footer div a span:hover 
+  transform: scale(1.3)
+
+@media (min-width: 1000px)
+  .footer
+    gap: 3rem
+    height: 150px
+
+
