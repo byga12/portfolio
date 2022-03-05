@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRef } from "react";
-import s from "../styles/About.module.sass";
+import s from "./About.module.sass";
 
 //CUSTOM HOOKS
 import useTransitionOnScroll from "../hooks/useTransitionOnScroll";

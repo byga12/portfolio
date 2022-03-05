@@ -1,0 +1,35 @@
+@import '../../_variables'
+
+.projects_title
+  display: flex
+  justify-content: center
+  padding-top: 5rem
+  font-size: 2rem
+  font-weight: 700
+  font-family: $poppins
+  opacity: 0
+  transform: translateX(-50px)
+  transition: transform 1s ease-out, opacity 1s ease-out
+
+.container
+  @include container
+  display: grid
+  gap: 1rem
+  justify-content: center
+  align-items: center
+  padding-block: 3rem
+  // min-height: 100vh
+
+
+//////////////////////////////////MODIFIERS
+.fadeIn
+  opacity: 1
+  transform: translateX(0)
+
+
+@media (min-width: 400px)
+  .projects_title
+    padding-top: 7rem
+  .container
+    width: 95%
+    grid-template-columns: 1fr 1fr
