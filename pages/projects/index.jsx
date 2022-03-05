@@ -20,8 +20,6 @@ const Projects = (props) => {
 
   useTransitionOnScroll(refs.current, s.fadeIn);
 
-  console.log(props);
-
   return (
     <div>
       <h2 className={s.projects_title} ref={(ref) => refs.current.push(ref)}>

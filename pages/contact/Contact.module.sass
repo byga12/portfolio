@@ -1,0 +1,53 @@
+@import '../../_variables'
+
+.container
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+/////////////////////Social media 
+.socialMedia
+  @include container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 1rem
+  opacity: 0
+  transform: translateX(-50px)
+  transition: transform 1s ease-out, opacity 1s ease-out
+
+.title
+  // margin-top: 2rem
+  font-size: 2rem
+
+.textContent
+  margin-top: 1rem
+  display: flex
+.textContent li a
+  text-decoration: none
+
+.svg
+  transition: transform 0.3s ease-out
+.svg:hover
+  transform: scale(1.1)
+
+
+
+//////////////////////////////////MODIFIERS
+.fadeIn
+  opacity: 1
+  transform: translateX(0)
+
+
+
+@media (min-width: 500px)
+  .textContent
+    font-size: 1.2rem
+    gap: 1rem
+  
+
+
+ 

@@ -17,8 +17,6 @@ export default function Project({
 }) {
   const [viewportwidth, setViewportWidth] = useState();
 
-  console.log(mainTechnologies);
-
   useEffect(() => {
     const viewportWidthSetter = () => {
       setViewportWidth(window.innerWidth);
