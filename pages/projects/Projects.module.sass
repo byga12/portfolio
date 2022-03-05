@@ -13,15 +13,12 @@
 
 .container
   @include container
+  position: relative
   display: grid
   grid-template-columns: 1fr
-  min-height: 100vh
   gap: 1rem
-  justify-items: center
-  justify-content: center
-  align-items: center
   padding-block: 3rem
-
+  min-height: 100vh
 
 //////////////////////////////////MODIFIERS
 .fadeIn
@@ -34,5 +31,4 @@
     padding-top: 7rem
   .container
     width: 95%
-    display: grid
     grid-template-columns: 1fr 1fr
