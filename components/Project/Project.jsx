@@ -38,6 +38,7 @@ export default function Project({
             width={200}
             height={400}
             layout="responsive"
+            quality={30}
           />
         ) : (
           <Image
@@ -46,6 +47,7 @@ export default function Project({
             width={800}
             height={400}
             layout="responsive"
+            quality={30}
             priority
           />
         )}

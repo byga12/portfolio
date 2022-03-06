@@ -4,7 +4,7 @@ import useTransitionOnScroll from "../../hooks/useTransitionOnScroll";
 import { useRef } from "react";
 import Project from "../../components/Project/Project";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const projects = await getProjectsList({
     property: "Status",
     select: {
