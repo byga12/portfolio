@@ -35,8 +35,8 @@ export default function Project({
           <Image
             src={mobileImg}
             alt={name}
-            width={200}
-            height={400}
+            width={361}
+            height={768}
             layout="responsive"
             quality={30}
           />
@@ -44,8 +44,8 @@ export default function Project({
           <Image
             src={desktopImg}
             alt={name}
-            width={800}
-            height={400}
+            width={1345}
+            height={841}
             layout="responsive"
             quality={30}
             priority
