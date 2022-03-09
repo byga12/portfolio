@@ -18,6 +18,8 @@ export default function Project({
   const [viewportwidth, setViewportWidth] = useState();
 
   useEffect(() => {
+    setViewportWidth(window.innerWidth);
+
     const viewportWidthSetter = () => {
       setViewportWidth(window.innerWidth);
     };
@@ -39,6 +41,7 @@ export default function Project({
             height={768}
             layout="responsive"
             quality={30}
+            priority
           />
         ) : (
           <Image
