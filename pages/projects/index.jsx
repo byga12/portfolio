@@ -12,7 +12,7 @@ export async function getStaticProps() {
     },
   });
 
-  return { props: { projects } };
+  return { props: { projects }, revalidate: 3540 };
 }
 
 const Projects = (props) => {
