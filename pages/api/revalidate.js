@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  console.log("WORKS!!!!!", req.headers);
+  console.log("REQUEST:", req);
 
   const secret = process.env.ZAPIER_WEBHOOK_SECRET;
   if (req.query.secret !== secret) {
