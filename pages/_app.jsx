@@ -27,6 +27,10 @@ function MyApp({ Component, pageProps }) {
           key="ogdesc"
         />
         <title>Portfolio | Gabriel Shimabuku</title>
+        <meta
+          name="description"
+          content="Portfolio website for Gabriel Shimabuku"
+        />
       </Head>
       <Navigation />
       <Component {...pageProps} />
