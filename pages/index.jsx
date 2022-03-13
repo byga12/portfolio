@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import { useRef } from "react";
 import s from "./About.module.sass";
