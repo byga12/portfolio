@@ -40,7 +40,7 @@ export default function Project({
             width={361}
             height={768}
             layout="responsive"
-            quality={30}
+            quality={70}
             priority
           />
         ) : (
@@ -50,7 +50,7 @@ export default function Project({
             width={1345}
             height={841}
             layout="responsive"
-            quality={30}
+            quality={70}
             priority
           />
         )}

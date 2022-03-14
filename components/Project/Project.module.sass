@@ -3,10 +3,11 @@
 .picture_container
   position: relative
   max-width: 250px
+  height: min-content
   width: 100%
   margin: 0 auto
-  
-.overlay 
+
+.overlay
   position: absolute
   top: 0
   left: 0
@@ -22,29 +23,25 @@
   padding: 1rem
   justify-content: center
 
-.overlay::-webkit-scrollbar 
+.overlay::-webkit-scrollbar
   width: 18px
-.overlay::-webkit-scrollbar-thumb 
+.overlay::-webkit-scrollbar-thumb
   background-color: #bdbdbd
   border-radius: 20px
   border: 6px solid transparent
   background-clip: content-box
-.overlay::-webkit-scrollbar-thumb:hover 
+.overlay::-webkit-scrollbar-thumb:hover
   background-color: #8d8d8d
 
-
 .overlay > *
-  transform: translateY(20px) 
+  transform: translateY(20px)
   transition: transform 0.4s ease-in-out
-.picture_container:hover .overlay 
+.picture_container:hover .overlay
   opacity: 1
-  visibility: visible 
-
-
-
+  visibility: visible
 
 .picture_container:hover .overlay > *
-  transform: translateY(0px) 
+  transform: translateY(0px)
 
 .overlay_title
   color: $white
@@ -61,7 +58,7 @@
   gap: .3rem
 
 // CHIP
-.chip 
+.chip
   background-color: rgba(124,124,124,0.7)
   color: white
   padding-inline: .8rem
@@ -72,7 +69,7 @@
 
 // LINKS
 
-.links 
+.links
   margin-top: 2rem
   display: flex
   justify-content: center
@@ -92,7 +89,6 @@
 .links li:hover
   transform: scale(1.1)
 
-
 .links li a
   display: flex
   width: 100%
@@ -100,13 +96,7 @@
   white-space: nowrap
   text-decoration: none
 
-
-
-
-
 //////////////////////////////////MEDIA QUERIES
-
-
 
 @media (min-width: 500px)
   .picture_container
