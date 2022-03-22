@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="https://portfolio-byga12.vercel.app/og_image.png"
+          content="https://portfolio-byga12.vercel.app/images/og_image.png"
           key="ogimage"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
