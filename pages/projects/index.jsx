@@ -18,7 +18,6 @@ export async function getStaticProps() {
 const Projects = (props) => {
   const refs = useRef([]);
   useTransitionOnScroll(refs.current, s.fadeIn);
-  console.log(props);
 
   return (
     <div>
