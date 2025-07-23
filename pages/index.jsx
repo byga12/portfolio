@@ -15,7 +15,7 @@ export default function About() {
       <article className={s.hero}>
         <main className={s.firstCol} ref={(ref) => refs.current.push(ref)}>
           <h1 className={s.name}>Gabriel Shimabuku</h1>
-          <h3 className={s.area}>frontend web developer</h3>
+          <h3 className={s.area}>Web developer</h3>
         </main>
       </article>
 
@@ -37,7 +37,7 @@ export default function About() {
         >
           <h2 className={s.bio_title}>about me</h2>
           <p className={s.bio_content}>
-            I’m a frontend developer based in Buenos Aires, Argentina. I enjoy
+            I’m a web developer based in Buenos Aires, Argentina. I enjoy
             building apps, solving problems and learning about web development.
             Most of what I’ve learned comes from personal projects and free
             courses. I consider myself a self-taught person who likes
@@ -46,27 +46,27 @@ export default function About() {
         </section>
       </article>
 
-      <article className={s.skills}>
-        <h2 className={s.skills_title} ref={(ref) => refs.current.push(ref)}>
-          Skills & tools I use
+      <article className={s.stack}>
+        <h2 className={s.stack_title} ref={(ref) => refs.current.push(ref)}>
+          Tech stack
         </h2>
         <div
-          className={s.skills_description}
+          className={s.stack_description}
           ref={(ref) => refs.current.push(ref)}
         >
-          <ul className={s.skillsList}>
+          <ul className={s.stackList}>
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>Sass</li>
             <li>JavaScript</li>
-            <li>GSAP</li>
             <li>React</li>
+            <li>Svelte</li>
+
           </ul>
-          <ul className={s.toolsList}>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>VSCode</li>
-            <li>Figma</li>
+          <ul className={s.stackList}>
+            <li>Python</li>
+            <li>Go</li>
+            <li>C# (.NET)</li>
+            <li>Git/Github</li>
           </ul>
         </div>
       </article>
