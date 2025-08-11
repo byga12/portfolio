@@ -30,8 +30,8 @@ const Projects = (props) => {
             key={id}
             name={properties["Name"].title[0]?.plain_text}
             description={properties["Description"].rich_text[0]?.plain_text}
-            desktopImg={properties["Desktop image"]?.url}
-            mobileImg={properties["Mobile image"]?.url}
+            desktopImg={`/portfolio/${properties["Desktop image"]?.url}`}
+            mobileImg={`/portfolio/${properties["Mobile image"]?.url}`}
             mainTechnologies={properties["Main technologies"]?.multi_select}
             repo={properties["Repo URL"].url}
             live={properties["Live URL"].url}
