@@ -7,7 +7,10 @@ const nextConfig = {
       "dl.dropbox.com",
       "dl.dropboxusercontent.com",
       "dropbox.com",
-      "pcloud.com"
+      "pcloud.com",
+      "*.pcloud.com",
+      "th1.pcloud.com",
+      "th2.pcloud.com",
     ],
     remotePatterns: [
       {
