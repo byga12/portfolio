@@ -7,11 +7,16 @@ const nextConfig = {
       "dl.dropbox.com",
       "dl.dropboxusercontent.com",
       "dropbox.com",
+      "pcloud.com"
     ],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '*.dl.dropboxusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.pcloud.com',
       },
     ]
   },
