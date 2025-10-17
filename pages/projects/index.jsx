@@ -11,8 +11,11 @@ export async function getStaticProps() {
       equals: "Live",
     },
   });
+  const sortedProjects = projects.toSorted((a, b) => {
+    return new Date(b.created_time).getTime() - new Date(a.created_time).getTime()
+  })
 
-  return { props: { projects } };
+  return { props: { projects: sortedProjects } };
 }
 
 const Projects = (props) => {
